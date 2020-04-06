@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    table,th,td {
+      border: 1px solid black;
+    }
+  </style>
+	<meta charset="utf-8">
+	<title></title>
+
+        
+    </head>
+    <body>
+       <form>
+        <label>Nom :</label>
+          <input type="text" id="name"><br><br>
+        <label>Prenom:</label>
+          <input type="text" id="prenom"><br><br>
+        <label>Age:</label>
+          <input type="text" id="age"><br><br>
+        <label>Profession:</label>
+          <input type="text" id="profession"><br><br>
+        <input type="button" value="click"  onclick="Send()">
+        </form>
+<table id="myTable" >
+    <tr>
+        <th>name</th>
+        <th>Prenom</th>
+        <th>Age</th>
+        <th>Profession</th>
+    </tr>
+</table>
+
+       
+        <script>     
+         function Send() {
+              let tab1 = document.getElementById("myTable");
+              let name = document.getElementById("name");
+              let prenom = document.getElementById("prenom");
+              let age = document.getElementById("age");
+                tab1.innerHTML +="<tr><td>"+name.value+"</td><td>"+prenom.value+"</td><td>"+age.value+"</td><td>"+profession.value+"</td></tr>";
+
+         }     
+         </script>
+         </script>
+
+
+</body>
+</html>
